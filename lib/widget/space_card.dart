@@ -51,7 +51,7 @@ class SpaceCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Image.asset(
-                            'assets/Icon_star.png',
+                            'assets/images/Icon_star.png',
                             width: 22,
                             height: 22,
                           ),
@@ -86,7 +86,7 @@ class SpaceCard extends StatelessWidget {
               ),
               Text.rich(
                 TextSpan(
-                  text: '\$${space.price}',
+                  text: '\Rp. ${space.price}\k',
                   style: purpleTextStyle.copyWith(
                     fontSize: 16,
                   ),

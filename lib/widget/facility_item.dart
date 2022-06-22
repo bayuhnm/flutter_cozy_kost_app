@@ -22,7 +22,7 @@ class FacilityItem extends StatelessWidget {
         ),
         Text.rich(
           TextSpan(
-            text: '$total',
+            text: '$total ',
             style: purpleTextStyle.copyWith(
               fontSize: 14,
             ),

@@ -13,7 +13,7 @@ class SplashPage extends StatelessWidget {
             children: [
               Align(
                 alignment: Alignment.bottomCenter,
-                child: Image.asset('assets/splash_image.png'),
+                child: Image.asset('assets/images/splash_image.png'),
               ),
               Padding(
                 padding: EdgeInsets.only(
@@ -28,7 +28,7 @@ class SplashPage extends StatelessWidget {
                       width: 50,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/logo.png')),
+                            image: AssetImage('assets/images/Logo.png')),
                       ),
                     ),
                     SizedBox(
@@ -44,7 +44,7 @@ class SplashPage extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'Stop membuang banyak waktu\npada tempat yang tidak habitable',
+                      'Stop membuang banyak waktu pada tempat yang tidak habitable',
                       style: greyTextStyle.copyWith(
                         fontSize: 16,
                       ),

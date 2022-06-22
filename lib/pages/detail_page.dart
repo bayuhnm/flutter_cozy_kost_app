@@ -81,7 +81,7 @@ class DetailPage extends StatelessWidget {
                                 ),
                                 Text.rich(
                                   TextSpan(
-                                    text: '\$${space.price}',
+                                    text: '\Rp. ${space.price}\k',
                                     style: purpleTextStyle.copyWith(
                                       fontSize: 16,
                                     ),
@@ -140,17 +140,17 @@ class DetailPage extends StatelessWidget {
                           children: [
                             FacilityItem(
                               name: 'kitchen',
-                              imgUrl: 'assets/icon_kitchen.png',
+                              imgUrl: 'assets/images/icon_kitchen.png',
                               total: space.numberOfKitchens,
                             ),
                             FacilityItem(
                               name: 'bedroom',
-                              imgUrl: 'assets/icon_bedroom.png',
+                              imgUrl: 'assets/images/icon_bedroom.png',
                               total: space.numberOfBedrooms,
                             ),
                             FacilityItem(
                               name: 'Big Lemari',
-                              imgUrl: 'assets/icon_capboard.png',
+                              imgUrl: 'assets/images/icon_capboard.png',
                               total: space.numberOfCupboards,
                             ),
                           ],
@@ -234,7 +234,7 @@ class DetailPage extends StatelessWidget {
                           launchUrl(space.mapUrl);
                         },
                         child: Image.asset(
-                          'assets/btn_map.png',
+                          'assets/images/btn_map.png',
                           width: 40,
                         ),
                       ),
@@ -286,12 +286,12 @@ class DetailPage extends StatelessWidget {
                       Navigator.pop(context);
                     },
                     child: Image.asset(
-                      'assets/btn_back.png',
+                      'assets/images/btn_back.png',
                       width: 40,
                     ),
                   ),
                   Image.asset(
-                    'assets/btn_wishlist.png',
+                    'assets/images/btn_wishlist.png',
                     width: 40,
                   )
                 ],

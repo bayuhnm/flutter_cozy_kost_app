@@ -8,7 +8,6 @@ import 'package:flutter_cozy_kost_app/theme.dart';
 import 'package:flutter_cozy_kost_app/widget/bottom_navbar_item.dart';
 import 'package:flutter_cozy_kost_app/widget/city_card.dart';
 import 'package:flutter_cozy_kost_app/widget/space_card.dart';
-import 'package:flutter_cozy_kost_app/widget/tips_card.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -192,52 +191,6 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            // NOTE:TIPS & GUIDANCE
-            Padding(
-              padding: EdgeInsets.only(
-                left: edge,
-              ),
-              child: Text(
-                'Tips & Guidance',
-                style: regularTextStyle.copyWith(
-                  fontSize: 16,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: edge,
-              ),
-              child: Column(
-                children: [
-                  TipsCard(
-                    Tips(
-                      id: 1,
-                      imageUrl: 'assets/tips1.png',
-                      title: 'City Guidelines',
-                      updataedAt: '20 Apr',
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  TipsCard(
-                    Tips(
-                      id: 2,
-                      imageUrl: 'assets/tips2.png',
-                      title: 'Jakarta Fairship',
-                      updataedAt: '11 Dec',
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 50 + edge,
-            ),
           ],
         ),
       ),
@@ -255,19 +208,19 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             BottomNavbarItem(
-              imageUrl: 'assets/Icon_home.png',
+              imageUrl: 'assets/images/Icon_home.png',
               isActive: true,
             ),
             BottomNavbarItem(
-              imageUrl: 'assets/Icon_mail.png',
+              imageUrl: 'assets/images/Icon_mail.png',
               isActive: false,
             ),
             BottomNavbarItem(
-              imageUrl: 'assets/Icon_card.png',
+              imageUrl: 'assets/images/Icon_card.png',
               isActive: false,
             ),
             BottomNavbarItem(
-              imageUrl: 'assets/Icon_love.png',
+              imageUrl: 'assets/images/Icon_love.png',
               isActive: false,
             ),
           ],

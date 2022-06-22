@@ -39,7 +39,7 @@ class CityCard extends StatelessWidget {
                     ),
                     child: Center(
                       child: Image.asset(
-                        'assets/Icon_star.png',
+                        'assets/images/Icon_star.png',
                         width: 22,
                         height: 22,
                       ),
