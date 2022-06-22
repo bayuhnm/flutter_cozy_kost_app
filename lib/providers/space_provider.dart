@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class SpaceProvider extends ChangeNotifier {
   getRecommendedSpaces() async {
     var result =
-        await http.get('link API mu taruh sini ya bekk, datamu sesuaikan sama model yang dah ada :v');
+    await http.get('link API mu taruh sini ya bekk, datamu sesuaikan sama model yang dah ada :v');
 
     print(result.statusCode);
     print(result.body);

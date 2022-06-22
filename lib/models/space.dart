@@ -5,11 +5,11 @@ class Space {
   int price;
   String city;
   String country;
-  int rating;
+  int rating;//
   String address;
   String phone;
-  String mapUrl;
-  List photos;
+  String mapUrl;//
+  List photos;//
   int numberOfKitchens;
   int numberOfBedrooms;
   int numberOfCupboards;
