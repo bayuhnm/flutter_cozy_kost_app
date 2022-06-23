@@ -252,7 +252,7 @@ class DetailPage extends StatelessWidget {
                   width: MediaQuery.of(context).size.width - (2 * edge),
                   child: ElevatedButton(
                     onPressed: () {
-                      launchUrl('tel:${space.phone}');
+                      launchUrl('https://wa.me/${space.phone}');
                     },
                     child: Text(
                       'Book Now',
