@@ -10,6 +10,44 @@ import 'package:flutter_cozy_kost_app/widget/city_card.dart';
 import 'package:flutter_cozy_kost_app/widget/space_card.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_cozy_kost_app/crud/store_data.dart';
+
+class Sidebar extends StatelessWidget {
+  // Sidebar obj = new Sidebar();
+  // late TourismPlace place;
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.yellow,
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage('assets/images/city1.png'),
+                ),
+              ),
+              child: Text('Cozy Kost App',
+                style: TextStyle(color: Colors.black, fontSize: 30),
+              ),
+            ),
+            ListTile(
+              title: const Text('Form Input Kost'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => WriteSQLdata()),
+                );
+              },
+            ),
+          ]
+        )
+      );
+  }
+}
 
 class HomePage extends StatelessWidget {
   @override
@@ -207,6 +245,7 @@ class HomePage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            
             BottomNavbarItem(
               imageUrl: 'assets/images/Icon_home.png',
               isActive: true,
@@ -222,11 +261,13 @@ class HomePage extends StatelessWidget {
             BottomNavbarItem(
               imageUrl: 'assets/images/Icon_love.png',
               isActive: false,
+              
             ),
           ],
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      drawer: Sidebar(),
     );
   }
 }

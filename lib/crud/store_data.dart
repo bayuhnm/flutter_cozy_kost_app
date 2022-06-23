@@ -31,17 +31,13 @@ class WriteSQLdataState extends State<WriteSQLdata>{
   TextEditingController numberOfCupboards = TextEditingController();
   //text controller for TextField
 
-  String msg= "oke";
+  String msg= "";
 
   String phpurl = "https://nora-id.nismumtaz.com/api/kosts";
   // do not use http://localhost/ for your local
   // machine, Android emulation do not recognize localhost
   // insted use your local ip address or your live URL
   // hit "ipconfig" on Windows or  "ip a" on Linux to get IP Address
-
-  @override
-
-
   Future<void> sendData() async {
 
      var res = await http.post(Uri.parse(phpurl), body: { 
@@ -270,7 +266,7 @@ class WriteSQLdataState extends State<WriteSQLdata>{
                           sendData();
                         },
                         child: Text(
-                          msg
+                          'submit'
                           //if sending == true then show "Sending" else show "SEND DATA";
                         ), 
                         color: Colors.redAccent,

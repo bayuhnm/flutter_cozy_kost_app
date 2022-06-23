@@ -1,6 +1,7 @@
 import 'package:flutter_cozy_kost_app/pages/home_page.dart';
 import 'package:flutter_cozy_kost_app/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_cozy_kost_app/pages/home_page.dart';
 
 class SplashPage extends StatelessWidget {
   @override
@@ -83,6 +84,7 @@ class SplashPage extends StatelessWidget {
               ),
             ],
           )),
+           drawer: Sidebar(),
     );
   }
 }
