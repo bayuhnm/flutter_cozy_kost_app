@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class SpaceProvider extends ChangeNotifier {
   getRecommendedSpaces() async {
     var result =
-        await http.get('https://bwa-cozy.herokuapp.com/recommended-spaces');
+        await http.get('https://bwa-cozy-api.vercel.app/recommended-spaces');
 
     print(result.statusCode);
     print(result.body);

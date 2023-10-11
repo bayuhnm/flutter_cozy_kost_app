@@ -10,10 +10,13 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => SpaceProvider(),
-      child: MaterialApp(
-        home: SplashPage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: true,
+      home: ChangeNotifierProvider(
+        create: (context) => SpaceProvider(),
+        child: MaterialApp(
+          home: SplashPage(),
+        ),
       ),
     );
   }

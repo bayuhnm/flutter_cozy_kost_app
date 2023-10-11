@@ -86,13 +86,13 @@ class SpaceCard extends StatelessWidget {
               ),
               Text.rich(
                 TextSpan(
-                  text: '\Rp. ${space.price}\k',
+                  text: '\$ ${space.price}',
                   style: purpleTextStyle.copyWith(
                     fontSize: 16,
                   ),
                   children: [
                     TextSpan(
-                      text: '/ month',
+                      text: '/ day',
                       style: greyTextStyle.copyWith(
                         fontSize: 16,
                       ),
