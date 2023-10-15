@@ -87,7 +87,6 @@ class SplashPage extends StatelessWidget {
                 ),
               ],
             )),
-             drawer: Sidebar(),
       ),
     );
   }
